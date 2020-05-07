@@ -1,0 +1,670 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: giggly-font;
+  src: url("glimg/Varela.ttf");
+}
+* {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: giggly-font;
+  color: #5f5f5f;
+}
+
+h1 {
+  font-size: 42px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 20px;
+}
+
+h1::after {
+  content: "";
+  padding: 0px 21px;
+  position: relative;
+  background-image: url("glimg/1.svg");
+  background-repeat: no-repeat;
+}
+
+h1::before {
+  content: "";
+  padding: 0px 21px;
+  position: relative;
+  background-image: url("glimg/1.svg");
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 20px;
+}
+
+h2::after {
+  content: "";
+  padding: 0px 18px;
+  position: relative;
+  background-image: url("glimg/2.svg");
+  background-repeat: no-repeat;
+}
+
+h2::before {
+  content: "";
+  padding: 0px 18px;
+  position: relative;
+  background-image: url("glimg/2.svg");
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 20px;
+}
+
+h3::after {
+  content: "";
+  padding: 0px 15px;
+  position: relative;
+  background-image: url("glimg/3.svg");
+  background-repeat: no-repeat;
+}
+
+h3::before {
+  content: "";
+  padding: 0px 15px;
+  position: relative;
+  background-image: url("glimg/3.svg");
+  background-repeat: no-repeat;
+}
+
+h4 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 20px;
+}
+
+h4::after {
+  content: "";
+  padding: 0px 12px;
+  position: relative;
+  background-image: url("glimg/4.svg");
+  background-repeat: no-repeat;
+}
+
+h4::before {
+  content: "";
+  padding: 0px 12px;
+  position: relative;
+  background-image: url("glimg/4.svg");
+  background-repeat: no-repeat;
+}
+
+h5 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 20px;
+}
+
+h5::after {
+  content: "";
+  padding: 0px 9px;
+  position: relative;
+  background-image: url("glimg/5.svg");
+  background-repeat: no-repeat;
+}
+
+h5::before {
+  content: "";
+  padding: 0px 9px;
+  position: relative;
+  background-image: url("glimg/5.svg");
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #e666af;
+}
+
+h2 {
+  color: #f9c503;
+}
+
+h3 {
+  color: #f77719;
+}
+
+h4 {
+  color: #63aaf5;
+}
+
+h5 {
+  color: #51d286;
+}
+
+p {
+  padding: 16px 0px;
+}
+
+.gl-txt-c {
+  text-align: center;
+}
+
+.gl-txt-r {
+  text-align: right;
+}
+
+.gl-txt-l {
+  text-align: left;
+}
+
+ul {
+  list-style-image: url("glimg/ball.svg");
+  list-style-position: inside;
+}
+
+ul li {
+  padding-top: 10px;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-style: bold;
+  font-weight: 1000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gl-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gl-col {
+  flex-grow: 1;
+}
+
+.gl-w100 {
+  width: 100% !important;
+}
+
+.gl-col-1 {
+  width: 8.33333%;
+}
+
+.gl-col-2 {
+  width: 16.66666%;
+}
+
+.gl-col-3 {
+  width: 24.99999%;
+}
+
+.gl-col-4 {
+  width: 33.33332%;
+}
+
+.gl-col-5 {
+  width: 41.66665%;
+}
+
+.gl-col-6 {
+  width: 49.99998%;
+}
+
+.gl-col-7 {
+  width: 58.33331%;
+}
+
+.gl-col-8 {
+  width: 66.66664%;
+}
+
+.gl-col-9 {
+  width: 74.99997%;
+}
+
+.gl-col-10 {
+  width: 83.3333%;
+}
+
+.gl-col-11 {
+  width: 91.66663%;
+}
+
+.gl-col-12 {
+  width: 99.99996%;
+}
+
+@media screen and (max-width: 960px) {
+  .gl-col-l1 {
+    width: 8.33333%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l2 {
+    width: 16.66666%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l3 {
+    width: 24.99999%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l4 {
+    width: 33.33332%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l5 {
+    width: 41.66665%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l6 {
+    width: 49.99998%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l7 {
+    width: 58.33331%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l8 {
+    width: 66.66664%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l9 {
+    width: 74.99997%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l10 {
+    width: 83.3333%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l11 {
+    width: 91.66663%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gl-col-l12 {
+    width: 99.99996%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m1 {
+    width: 8.33333%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m2 {
+    width: 16.66666%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m3 {
+    width: 24.99999%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m4 {
+    width: 33.33332%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m5 {
+    width: 41.66665%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m6 {
+    width: 49.99998%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m7 {
+    width: 58.33331%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m8 {
+    width: 66.66664%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m9 {
+    width: 74.99997%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m10 {
+    width: 83.3333%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m11 {
+    width: 91.66663%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gl-col-m12 {
+    width: 99.99996%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s1 {
+    width: 8.33333%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s2 {
+    width: 16.66666%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s3 {
+    width: 24.99999%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s4 {
+    width: 33.33332%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s5 {
+    width: 41.66665%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s6 {
+    width: 49.99998%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s7 {
+    width: 58.33331%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s8 {
+    width: 66.66664%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s9 {
+    width: 74.99997%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s10 {
+    width: 83.3333%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s11 {
+    width: 91.66663%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .gl-col-s12 {
+    width: 99.99996%;
+  }
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gl-cont {
+  padding: 16px 0px;
+}
+
+.gl-panel {
+  padding: 16px;
+}
+
+.gl-border {
+  border: 1px solid #c2c2c2;
+  border-radius: 0px;
+}
+
+.gl-txt-giggly {
+  color: #e666ae;
+}
+
+.gl-bt-board.gl-pink {
+  border-color: #e666af;
+}
+
+.gl-bt-board.gl-red {
+  border-color: #f77719;
+}
+
+.gl-bt-board.gl-blue {
+  border-color: #63aaf5;
+}
+
+.gl-bt-board.gl-yellow {
+  border-color: #f9c503;
+}
+
+.gl-bt-board.gl-green {
+  border-color: #51d286;
+}
+
+.gl-bt-flat.gl-pink {
+  background-color: #e666af;
+  border-color: #e666af;
+}
+
+.gl-bt-flat.gl-red {
+  background-color: #f77719;
+  border-color: #f77719;
+}
+
+.gl-bt-flat.gl-blue {
+  background-color: #63aaf5;
+  border-color: #63aaf5;
+}
+
+.gl-bt-flat.gl-yellow {
+  background-color: #f9c503;
+  border-color: #f9c503;
+}
+
+.gl-bt-flat.gl-green {
+  background-color: #51d286;
+  border-color: #51d286;
+}
+
+div.gl-pink {
+  background-color: #e666af;
+}
+
+div.gl-red {
+  background-color: #f77719;
+}
+
+div.gl-blue {
+  background-color: #63aaf5;
+}
+
+div.gl-yellow {
+  background-color: #f9c503;
+}
+
+div.gl-green {
+  background-color: #51d286;
+}
+
+button.gl-bt-board {
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px 0px gainsboro;
+}
+
+button.gl-bt-board:hover {
+  box-shadow: none;
+}
+
+button.gl-bt-flat {
+  padding: 10px 20px;
+  background-color: #e666af;
+  border: 2px solid #e666af;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px 0px gainsboro;
+}
+
+button.gl-bt-flat:hover {
+  box-shadow: none;
+}
+
+label.gl-radio {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label.gl-radio input:checked + span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 0px;
+  background-image: url("glimg/ball.svg");
+}
+
+label.gl-radio input + span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  top: 7px;
+  left: 0px;
+}
+
+label.gl-check {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label.gl-check input:checked + span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 0px;
+  background-image: url("glimg/check.svg");
+}
+
+label.gl-check input:hover + span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #c4c4c4;
+  top: 7px;
+  left: 0px;
+}
+
+label.gl-check input + span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  top: 7px;
+  left: 0px;
+}
+
+/*# sourceMappingURL=giggly.css.map */

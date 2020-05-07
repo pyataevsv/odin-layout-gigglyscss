@@ -1,0 +1,42 @@
+$pink: #e666af;
+$yellow:#f9c503;
+$red:#f77719;
+$blue:#63aaf5;
+$green:#51d286;
+
+$colors: (
+    'pink': $pink,
+    'red': $red,
+    'blue': $blue,
+    'yellow': $yellow,
+    'green': $green
+);
+
+.gl-txt-giggly {
+    color: #e666ae;
+}
+
+// buttons
+
+@each $name, $val in $colors {
+    .gl-bt-board.gl-#{$name} {
+        border-color: #{$val};
+    }
+}
+
+@each $name, $val in $colors {
+    .gl-bt-flat.gl-#{$name}{
+        background-color: #{$val};
+        border-color: #{$val};
+    }
+}
+
+//divs
+
+@each $name, $val in $colors {
+    div.gl-#{$name} {
+        background-color: $val;
+    }
+    
+}
+

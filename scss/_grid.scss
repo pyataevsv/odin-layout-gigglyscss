@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+$base: 8.33333%;
+
+.gl-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gl-col {
+    flex-grow: 1;
+}
+
+.gl-w100 {
+    width: 100% !important;
+}
+
+@for $i from 1 through 12 {
+    .gl-col-#{$i} {
+        width: $base*$i;
+    }
+}
+
+@for $i from 1 through 12 {
+    @media screen and (max-width: 960px){
+        .gl-col-l#{$i} {
+            width: $base*$i;
+        }
+    }
+    
+}
+
+@for $i from 1 through 12 {
+    @media screen and (max-width: 768px){
+        .gl-col-m#{$i} {
+            width: $base*$i;
+        }
+    }
+    
+}
+
+
+@for $i from 1 through 12 {
+    @media screen and (max-width: 640px){
+        .gl-col-s#{$i} {
+            width: $base*$i;
+        }
+    }
+
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+
+
+

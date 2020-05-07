@@ -1,0 +1,120 @@
+$pink: #e666af;
+$yellow:#f9c503;
+$red:#f77719;
+$blue:#63aaf5;
+$green:#51d286;
+
+$colors: (
+    'pink': $pink,
+    'red': $red,
+    'blue': $blue,
+    'yellow': $yellow,
+    'green': $green
+);
+
+button.gl-bt-board {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 0px gainsboro;
+}
+
+button.gl-bt-board:hover {
+    box-shadow: none;
+}
+
+
+button.gl-bt-flat {
+        padding: 10px 20px;
+        background-color: $pink;
+        border: 2px solid $pink;
+        border-radius: 5px;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 6px 0px gainsboro;      
+    }
+button.gl-bt-flat:hover {
+    box-shadow: none;
+}
+
+
+
+label.gl-radio {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+input[type="radio"]{
+     display: none;
+}
+
+label.gl-radio input:checked + span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left:0px;
+    background-image: url('glimg/ball.svg');
+}
+
+
+label.gl-radio input + span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+    top: 7px;
+    left:0px;
+}
+
+
+//////////////////////////////////
+
+label.gl-check {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+input[type="checkbox"]{
+     display: none;
+}
+
+label.gl-check input:checked + span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left:0px;
+    background-image: url('glimg/check.svg');
+}
+
+label.gl-check input:hover + span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(196, 196, 196);
+    top: 7px;
+    left:0px;
+}
+
+label.gl-check input + span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    
+    background-color: rgb(224, 224, 224);
+    top: 7px;
+    left:0px;
+}
+
